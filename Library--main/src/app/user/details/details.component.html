@@ -1,0 +1,42 @@
+<section class="gbook container mt-5">
+    <h1 class="text-center mb-4">How To Get  <span class="highlight"> Your book </span></h1>
+    <div class="row">
+        <div class="col-md-6 col-lg-4">
+            <div class="box d-flex flex-column align-items-center justify-content-center shadow p-4 mb-3">
+                <i class="fst-italic fa-solid fa-1 fa-2x mb-3"style="color: red;"></i>
+                <p class="mb-0 fst-italic fs-5  text-white">Select Book</p>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="box  d-flex flex-column align-items-center justify-content-center shadow p-4 mb-3" >
+                <i class="fa-solid fa-2 fa-2x mb-3 " style="color: red;"></i>
+                <p class="mb-0 text-white fst-italic fs-5">Fill Details</p>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="box   d-flex flex-column align-items-center justify-content-center  shadow p-4 mb-3" >
+                <i class="fa-solid fa-3 fa-2x mb-3 fst-italic"style="color: red;" ></i>
+                <p class="mb-0  text-white fst-italic fs-5">Your Book Will Deliver in a Minute</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="books container">
+    <p class="text-center m-4 pb-3 h3 fw-bold"><em class="text-primary">Favourite Books</em></p>
+    <div class="row">
+        <div class="col-sm-6 col-md-4 col-lg-3"*ngFor="let item of books ;index as i">
+          <div class="boxt d-flex flex-column align-items-center justify-content-center shadow p-4 mb-3" *ngIf="i<=3">
+            <img [src]="item.image" alt="Harry Potter" class="img-fluid mb-3" style="height: 300px; width: 213px;">
+            <p class="par mb-1 fst-italic fw-bold">{{item.name}}</p>
+            <p class="fst-italic fw-bold">{{item.price}} $</p>
+          </div>
+        </div>
+      </div>
+
+    <div class="pb-5 mt-4 ms-4">
+        <a class="btn rounded-10 btn-dark text-uppercase" [routerLink]="['/user/books']">
+            <span class="text-white" >View More  </span>
+            <i class="fa-solid fa-arrow-right-long ms-2 text-white"></i>
+        </a>
+    </div>
+</section>

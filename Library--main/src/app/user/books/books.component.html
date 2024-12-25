@@ -1,0 +1,25 @@
+<app-navu></app-navu>
+<div class="container bg-light mt-3">
+    <div class="row">
+      <div class="col-md-4" *ngFor="let item of books">
+        <div class="card m-3" style="width: 18rem;">
+          <img class="card-img-top standardized-img" [src]="item.image" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text desc">Name : {{item.name}}</p>
+            <p class="card-text">Author : {{item.author}}</p>
+            <p class="card-text desc">Description : {{item.description}}</p>
+
+
+            <p class="card-text">Price : {{item.price}}</p>
+            <button class="btn btn-primary" *ngIf="!item.addButton" (click)="item.addButton = true">Add To Cart</button>
+            <button class="btn btn-primary m-2" *ngIf="!item.addButton" (click)="item.addButton = true">borrow</button>
+            <div class="d-flex" *ngIf="item.addButton">
+                <input type="number" class="form-control" [(ngModel)]="amount" placeholder="Quantity">
+                <button class="btn btn-danger" (click)="addToCart(item)">Add</button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<app-footer></app-footer>

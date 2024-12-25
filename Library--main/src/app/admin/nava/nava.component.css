@@ -1,0 +1,17 @@
+.navbar-light .navbar-nav .nav-link{
+    color: blue;
+    font-weight: bold;
+}
+.navbar-light .navbar-nav .nav-link.active-link{
+    color: black;
+    font-weight: bold;
+    text-decoration:none; 
+}
+nav{
+    width: 100%;
+}
+.cart-badge {
+    position: absolute;
+    top: -5px; /* Adjust to position above the text */
+    right: -10px; /* Adjust to position to the right */
+}

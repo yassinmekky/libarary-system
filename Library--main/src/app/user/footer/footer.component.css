@@ -1,0 +1,36 @@
+footer {
+    background-color: #34495e;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 20px;
+    text-align: center;
+    position: static; /* Fixed position */
+    bottom: 0; /* Align to bottom */
+    width: 100%; /* Make it full width */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.footer-content div {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-content h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.copyright {
+    margin-top: 10px; /* Add some space above copyright */
+}

@@ -1,0 +1,26 @@
+.banner {
+    background-image: url('../../../assets/imagesBackground/c.jpg');
+    height: 600px;
+    background-size: 100% 100%;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+button{
+    border-radius: 70px;
+}
+.banner1 {
+    height: 400px;
+    width: 100%;
+    background-image: url("../../../assets/imagesBackground/c.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    padding: 70px 20px;
+    margin-top: 20px;
+}

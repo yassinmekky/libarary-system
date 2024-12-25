@@ -1,0 +1,29 @@
+.box {
+    background-color: black;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 140px;
+}
+
+.boxt {
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    height: 450px;
+
+}
+.boxt img
+{
+    height: 300px;
+    width: 213px;
+}
+.par{
+    font-size: 18px;
+}
+.highlight{
+    color: rgb(39, 39, 214); 
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none;
+}
